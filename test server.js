@@ -5,4 +5,6 @@ server.listen(8085)
 server.on('connection', (client) => {
   client.on('data', (data) => console.log(data.toString()))
   client.write('hello from server')
+  client.write('hello from server1')
+  client.write('hello from server2')
 })
